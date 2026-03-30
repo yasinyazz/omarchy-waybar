@@ -1,0 +1,47 @@
+// ─────────────────────────────────────────────
+// waybar/config  —  add these two custom modules
+// ─────────────────────────────────────────────
+
+// 1. Add to your modules-left / modules-center / modules-right array:
+//    "custom/pacman-updates", "custom/flatpak-updates"
+
+"custom/pacman-updates": {
+    "exec": "~/.config/waybar/scripts/check-pacman-updates.sh",
+    "return-type": "json",
+    "interval": 1800,           // check every 30 minutes
+    "on-click": "~/.config/waybar/scripts/update-pacman.sh",
+    "tooltip": true
+},
+
+"custom/flatpak-updates": {
+    "exec": "~/.config/waybar/scripts/check-flatpak-updates.sh",
+    "return-type": "json",
+    "interval": 1800,
+    "on-click": "~/.config/waybar/scripts/update-flatpak.sh",
+    "tooltip": true
+},
+
+
+// ─────────────────────────────────────────────
+// waybar/style.css  —  paste anywhere
+// ─────────────────────────────────────────────
+
+/*
+#custom-pacman-updates,
+#custom-flatpak-updates {
+    padding: 0 8px;
+    color: #cdd6f4;
+    font-size: 13px;
+}
+
+#custom-pacman-updates.outdated,
+#custom-flatpak-updates.outdated {
+    color: #f38ba8;        /* red when updates are waiting */
+    font-weight: bold;
+}
+
+#custom-pacman-updates.updated,
+#custom-flatpak-updates.updated {
+    color: #a6e3a1;        /* green when all up to date */
+}
+*/
