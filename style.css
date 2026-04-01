@@ -99,6 +99,12 @@ tooltip {
   color: #a55555;
 }
 
+#custom-batcon {
+  padding: 0 10px;
+  color: #a6e3a1;
+}
+
+
 #custom-flatpak-updates {
   padding: 0 8px;
   margin-right: 18px;
