@@ -13,6 +13,7 @@
     "clock",
     "custom/update",
     "custom/pacman-updates",
+    "custom/flatpak-updates",
     "custom/voxtype",
     "custom/screenrecording-indicator",
     "custom/idle-indicator",
@@ -20,8 +21,6 @@
   ],
   "modules-right": [
     "group/tray-expander",
-    /*"custom/pacman-updates",*/
-    "custom/flatpak-updates",
     "idle_inhibitor",
     "bluetooth",
     "network",
